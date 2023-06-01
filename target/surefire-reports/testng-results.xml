@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-09T10:46:07 IST" name="Suite" finished-at="2023-05-09T10:46:20 IST" duration-ms="13673">
+    <groups>
+    </groups>
+    <test started-at="2023-05-09T10:46:07 IST" name="Test" finished-at="2023-05-09T10:46:20 IST" duration-ms="13673">
+      <class name="com.proj.testcases.TC002_Search_Functionality">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.proj.testcases.TC002_Search_Functionality@1e1a0406]" started-at="2023-05-09T10:46:07 IST" name="setUp" finished-at="2023-05-09T10:46:10 IST" duration-ms="3324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchWithValidProduct()[pri:1, instance:com.proj.testcases.TC002_Search_Functionality@1e1a0406]" started-at="2023-05-09T10:46:10 IST" name="searchWithValidProduct" finished-at="2023-05-09T10:46:13 IST" duration-ms="2539" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Intentionally Failing TC] but found [HP LP3065]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Intentionally Failing TC] but found [HP LP3065]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.proj.testcases.TC002_Search_Functionality.searchWithValidProduct(TC002_Search_Functionality.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithValidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.proj.testcases.TC002_Search_Functionality@1e1a0406]" started-at="2023-05-09T10:46:13 IST" name="tearDown" finished-at="2023-05-09T10:46:13 IST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="searchWithInvalidProduct()[pri:2, instance:com.proj.testcases.TC002_Search_Functionality@1e1a0406]" started-at="2023-05-09T10:46:13 IST" name="searchWithInvalidProduct" finished-at="2023-05-09T10:46:13 IST" depends-on-methods="com.proj.testcases.TC002_Search_Functionality.searchWithValidProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.proj.testcases.TC002_Search_Functionality.searchWithInvalidProduct() on instance com.proj.testcases.TC002_Search_Functionality@1e1a0406 depends on not successfully finished methods 
+[com.proj.testcases.TC002_Search_Functionality.searchWithValidProduct() on instance com.proj.testcases.TC002_Search_Functionality@1e1a0406]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.proj.testcases.TC002_Search_Functionality.searchWithInvalidProduct() on instance com.proj.testcases.TC002_Search_Functionality@1e1a0406 depends on not successfully finished methods 
+[com.proj.testcases.TC002_Search_Functionality.searchWithValidProduct() on instance com.proj.testcases.TC002_Search_Functionality@1e1a0406]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithInvalidProduct -->
+      </class> <!-- com.proj.testcases.TC002_Search_Functionality -->
+      <class name="com.proj.testcases.TC001_Register_Functionality">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.proj.testcases.TC001_Register_Functionality@6fdbe764]" started-at="2023-05-09T10:46:13 IST" name="setUp" finished-at="2023-05-09T10:46:15 IST" duration-ms="1797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkRegistrationTitle()[pri:0, instance:com.proj.testcases.TC001_Register_Functionality@6fdbe764]" started-at="2023-05-09T10:46:15 IST" name="checkRegistrationTitle" finished-at="2023-05-09T10:46:16 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkRegistrationTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.proj.testcases.TC001_Register_Functionality@6fdbe764]" started-at="2023-05-09T10:46:16 IST" name="tearDown" finished-at="2023-05-09T10:46:16 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.proj.testcases.TC001_Register_Functionality@6fdbe764]" started-at="2023-05-09T10:46:16 IST" name="setUp" finished-at="2023-05-09T10:46:18 IST" duration-ms="1912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerYourAccount()[pri:1, instance:com.proj.testcases.TC001_Register_Functionality@6fdbe764]" started-at="2023-05-09T10:46:18 IST" name="registerYourAccount" finished-at="2023-05-09T10:46:20 IST" duration-ms="2676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerYourAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.proj.testcases.TC001_Register_Functionality@6fdbe764]" started-at="2023-05-09T10:46:20 IST" name="tearDown" finished-at="2023-05-09T10:46:20 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.proj.testcases.TC001_Register_Functionality -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
